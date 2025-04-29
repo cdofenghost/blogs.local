@@ -17,15 +17,15 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
 
+        Category::create(['name' => 'Rocket Science']);
+        Category::create(['name' => 'Physics']);
+        Category::create(['name' => 'IT Stuff']);
+        
         Blog::factory(10)->create();
 
         // User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-
-        Category::create(['name' => 'Rocket Science']);
-        Category::create(['name' => 'Physics']);
-        Category::create(['name' => 'IT Stuff']);
     }
 }

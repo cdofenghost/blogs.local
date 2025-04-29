@@ -22,7 +22,7 @@ class BlogFactory extends Factory
             'author_id' => random_int(1, 10),
             'title' => fake()->name(),
             'content' => fake()->paragraph(10),
-            'preview_image' => asset('images/default-preview-image.jpg'),
+            'preview_image' => 'https://blogs.local/images/default-preview-image.jpg',
             'hidden' => fake()->boolean(),
         ];
     }
