@@ -56,7 +56,7 @@ class UserController extends Controller
 
         auth()->login($user);
         
-        return redirect('/');
+        return redirect('/', status: 201);
         
     }
 
@@ -65,6 +65,9 @@ class UserController extends Controller
             if (Auth::user()->role !== 'admin') {
                 abort(403, 'Permission denied: Insufficient rights. User must be an admin to perform this action.');
             }
+
+            $user->delete();
+            return redirect('/', status: 204);
         }
         
         $user->delete();
@@ -77,7 +80,7 @@ class UserController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect('/', status: 204);
     }
 
     // Solely Admin Routes

@@ -9,6 +9,7 @@ use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Laravel\Pail\ValueObjects\Origin\Console;
+use Nette\NotImplementedException;
 use function Psy\debug;
 
 class BlogController extends Controller
@@ -67,7 +68,7 @@ class BlogController extends Controller
 
         $blog = Blog::create($formFields);
         
-        return redirect('/');
+        return redirect('/', status: 201);
     }
 
     public function update(Request $request) {
