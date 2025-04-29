@@ -1,0 +1,159 @@
+html {
+    min-width: 1024px !important; /* Минимальная ширина документа */
+    overflow-x: auto;
+}
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+body {
+    background: linear-gradient(#3d4486, #1e2350) no-repeat;
+    font-family: "Fauna One", serif;
+    min-width: 714px;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    background-color: #A9B5DF; 
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+
+    border-radius: 10px;
+    border: 4px solid #FFF2F2;
+    max-height: 54px;
+}
+
+.category-button {
+    background-color: rgba(0, 0, 0, 0);
+    color: #2D336B;
+
+    font-family: "Space Mono", monospace;
+    font-weight: 800;
+    font-size: 16px;
+
+    border: none;
+    min-height: 54px;
+    height: 100%;
+    width: 100%;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.category-button:hover {
+    background-color: #1e2350;
+    color: #FFF2F2;
+
+    font-size: 24px;
+    
+    transition: ease-in-out color 0.4s, ease-in background-color 0.2s, cubic-bezier(0.175, 0.885, 0.32, 1.275) font-size 0.9s;
+    
+}
+
+.user-button {
+    background-color: rgba(0, 0, 0, 0);
+    color: #2D336B;
+
+    font-family: "Space Mono", monospace;
+    font-weight: 800;
+    font-size: 16px;
+
+    border: none;
+    min-height: 54px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.user-button:hover {
+    background-color: #3d4486;
+    color: #FFF2F2;
+    
+    transition: ease-in-out color 0.4s, ease-in background-color 0.2s;
+}
+
+
+.home-button {
+    background-color: #7886C7;
+    color: #2D336B;
+    border: none;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    min-height: 54px;
+    min-width: 400px;
+    width: 100%;
+    
+    font-family: "Space Mono", monospace;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.home-button:hover {
+    background-color: #88304E;
+    color: #FFF2F2;
+
+    transition: ease-in-out color 0.4s, ease-in background-color 0.2s;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    /* border: 1px solid seashell; */
+    align-items: center;
+    color: #FFF2F2;
+
+    font-family: "Space Mono", monospace;
+}
+
+.card-container {
+    display: grid;
+    grid-gap: 24px;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subtle-button {
+    min-height: 24px;
+    height: 100%;
+    
+    background-color: #7886C7;
+    color: #2D336B;
+
+    border: none;
+    border-radius: 10px;
+    font-family: "Space Mono", monospace;
+
+}
+
+.subtle-button:hover {    
+    background-color: #A9B5DF;
+    color: #1e2350;
+
+    transition: ease-in color 0.3s, ease-out background-color 0.3s;
+}

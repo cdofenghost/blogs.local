@@ -1,0 +1,35 @@
+.blog-card {
+    color: #FFF2F2;
+    font-family: "Space Mono", monospace;
+    max-width: 500px;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    /* border: 1px solid salmon; */
+    border-radius: 10px;
+    padding: 12px;
+
+    transition: ease-in background-color 0.5s;
+}
+
+.blog-card:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    transition: ease-in background-color 0.1s;
+}
+
+.blog-desc {
+    text-align: start;
+}
+
+.blog-date {
+    text-align: start;
+    color: #c9bfbf;
+    font-size: 16px;
+}
+.blog-image {
+    border-radius: 20px;
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+}
